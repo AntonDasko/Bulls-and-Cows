@@ -1,0 +1,19 @@
+:root {
+  --bg-color: #f4f4f9; --panel-bg: #ffffff; --text-main: #1a1a1a;
+  --accent: #2563eb; --border: #e5e7eb; --radius: 16px;
+}
+body {
+  font-family: 'Inter', sans-serif; background: var(--bg-color);
+  display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0;
+}
+#app {
+  width: 100%; max-width: 600px; background: var(--panel-bg);
+  border-radius: var(--radius); padding: 40px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+}
+button { width: 100%; padding: 14px; background: var(--accent); color: #fff; border: none; border-radius: 8px; cursor: pointer; }
+.game__input-row { display: flex; gap: 12px; }
+.game__input-row input { flex: 1; margin-bottom: 0; }
+.game__input-row button { width: auto; }
+.game__header { display: flex; justify-content: space-between; align-items: center; }
+.game__new { width: auto; background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+/* ... остальные стили для истории, таблицы рекордов и т.д. ... */
